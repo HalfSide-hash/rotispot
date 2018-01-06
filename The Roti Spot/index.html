@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!-- Choose login page.-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Login Page</title>
+      <style type="text/css">
+      center{
+          font-size: 35px;
+          font-family:verdana;
+      }
+      button{
+          font-family:verdana;
+      }
+    body{
+        background-color: lightgrey;
+      }
+      h2{
+          font-family:verdana;
+      }
+.button-group button {
+    font-size: 24px;
+    background-color: lightblue; /* Green background */
+    border: 1px solid yellow; /* Green border */
+    color: black; /* White text */
+    padding: 40px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    margin: 0 auto;
+}
+
+.button-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.button-group button:hover {
+    background-color:lightgreen;
+}
+</style>
+
+   </head>
+
+   <body>
+       <h1><center>Welcome to The Roti Spot!</center></h1>
+      <h2>Please select your type of account:</h2>
+
+
+      <div class="button-group" style="text-align: center;">
+          <button onclick="window.location.href='admin/adminlogin.php'">Admin</button>
+          <button onclick="window.location.href='employee/employeelogin.php'">Employee</button>
+          <button onclick="window.location.href='customer/customerlogin.php'">Customer</button>
+          <button onclick="window.location.href='manager/managerlogin.php'">Manager</button>
+      </div>
+   </body>
+</html>
